@@ -1,3 +1,3 @@
-FROM golang:1.16 as dev
+FROM golang:1.16-alpine as dev
 
 WORKDIR /work
