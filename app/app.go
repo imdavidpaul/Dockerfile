@@ -9,8 +9,8 @@ func main() {
 }
 func getData(customerID int) (customer string) {
 
-	var firstName = "David"
-	lastname := "paul"
+	var firstName = "Arun"
+	lastname := "Reddy"
 	customer = firstName + " " + lastname
 	return customer
 }
