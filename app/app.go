@@ -1,16 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 
-	customer := getData(1)
-	fmt.Println(customer)
-}
-func getData(customerID int) (customer string) {
+	customers := GetCustomers()
 
-	var firstName = "Arun"
-	lastname := "Reddy"
-	customer = firstName + " " + lastname
-	return customer
+	for _, customer := range customers {
+		//we can access the "customer" variable in this approach
+		fmt.Println(customer)
+	}
 }
